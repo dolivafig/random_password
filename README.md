@@ -12,3 +12,4 @@
 
 ### An image of the end result - displaying a generated password.
 ![image](website.png)
+## Click [here](https://dolivafig.github.io/random_password/) to go to the website.
