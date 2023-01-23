@@ -19,9 +19,11 @@ function writePassword() {
   lenght =  prompt("How long of a password? (8-128)")
   
 if (lenght < 8 || lenght > 128) {
- window.alert("Please choose number between 8 - 128");
+  //returns of function if criteria is not met
+ window.alert("Please choose a number between 8 - 128");
  return;
 } 
+//adds to a new array if accepted that will hold all the confirmed values
 console.log(lenght)
 var choicecaps =  confirm("Would you like the password to have capital letters?")
 if (choicecaps){
@@ -43,11 +45,13 @@ if (choicechar){
 }
 console.log(holder)
 
+// checks to see if any option was chosen, if not it quits the function
 if( index === 0 ){
   window.prompt("Please try again")
   return;
 }
 
+// loop to generate password with random numbers
 for(var i = 0; i<lenght; i++){
   var randNumber = Math.floor(Math.random() * holder.length);
   password += holder[randNumber];
